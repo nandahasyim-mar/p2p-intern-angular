@@ -8,7 +8,7 @@ export class AuthService {
   constructor() { }
 
   getUserDetails() {
-    return JSON.parse(localStorage.getItem('access_token')!);
+    return JSON.parse(localStorage.getItem('token')!);
   }
 
   setDataInLocalStorage(variableName: string, data:string) {

@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
       console.log(res, 'ini din localstrore ')
       if (res.message == "Success") {
         this._auth.setDataInLocalStorage('token', res.access_token);
-        this._router.navigate(['']);
+        this._router.navigate(['home']);
       } else {
       }
     }, err => {
